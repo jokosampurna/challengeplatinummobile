@@ -17,5 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.sendKeys(findTestObject('Page Register/textbox_HP'), 'hp')
+Mobile.clearText(findTestObject('Page Register/textbox_HP'), 0)
+
+Mobile.setText(findTestObject('Page Register/textbox_HP'), hp, 0)
 

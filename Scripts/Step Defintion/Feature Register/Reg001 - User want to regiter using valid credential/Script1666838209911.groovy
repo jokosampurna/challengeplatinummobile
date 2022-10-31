@@ -35,6 +35,8 @@ WebUI.callTestCase(findTestCase('Page Register/Input Kota'), [('kota') : 'Jakart
 
 WebUI.callTestCase(findTestCase('Page Register/Input Alamat'), [('alamat') : 'Kelapa Gading'], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.swipe(690, 2137, 0, 0)
+
 WebUI.callTestCase(findTestCase('Page Register/Tap Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)

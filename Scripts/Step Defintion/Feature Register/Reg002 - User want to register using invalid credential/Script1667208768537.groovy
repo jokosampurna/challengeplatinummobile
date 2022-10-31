@@ -17,7 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.clearText(findTestObject('Page Register/textbox_Email'), 0)
+WebUI.callTestCase(findTestCase('Page Register/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Page Register/textbox_Email'), email, 0)
+WebUI.callTestCase(findTestCase('Page Register/Tap Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Tap Page Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input Nama'), [('nama') : 'Jeko'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input Email'), [('email') : 'timamobile10'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input Password'), [('password') : '1234abc'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input HP'), [('hp') : '78454132'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input Kota'), [('kota') : 'Semarang'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page Register/Input Alamat'), [('alamat') : 'Candisari'], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.swipe(690, 2137, 0, 0)
+
+WebUI.callTestCase(findTestCase('Page Register/Tap Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 

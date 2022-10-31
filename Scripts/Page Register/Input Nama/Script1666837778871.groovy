@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.clearText(findTestObject('Page Register/textbox_Nama'), 0)
 
-Mobile.sendKeys(findTestObject('Page Register/textbox_Nama'), '')
+Mobile.setText(findTestObject('Page Register/textbox_Nama'), nama, 0)
 
