@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Logout - 001 User want to logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0e4f2ae-a42d-4949-afa2-0bc69719e976</testCaseGuid>
+</TestCaseEntity>
