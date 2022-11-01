@@ -17,27 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Page Register/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Tap Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Tap Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Tap Page Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Tap Page Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input Nama'), [('nama') : 'Madona'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input Nama'), [('nama') : 'Madona'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input Email'), [('email') : 'timamobile01@yopmail.com'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input Email'), [('email') : 'timamobile01@yopmail.com'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input Password'), [('password') : 'student1234'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input Password'), [('password') : 'student1234'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input HP'), [('hp') : '085212349876'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input HP'), [('hp') : '085212349876'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input Kota'), [('kota') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input Kota'), [('kota') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Page Register/Input Alamat'), [('alamat') : 'Kelapa Gading'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Input Alamat'), [('alamat') : 'Kelapa Gading'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.swipe(690, 2137, 0, 0)
 
-WebUI.callTestCase(findTestCase('Page Register/Tap Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Page/Register/Tap Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Page/Profile/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
