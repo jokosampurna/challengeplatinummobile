@@ -45,11 +45,11 @@ import cucumber.api.java.en.When
 
 
 class Register {
-	
+
 	//Reg001 - User want to register using valid credential
 	@Then("tap akun")
 	public void tap_akun() {
-		WebUI.callTestCase(findTestCase('Page/Register/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Page/Home/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("tap masuk")
@@ -108,19 +108,19 @@ class Register {
 		Mobile.closeApplication()
 		Mobile.startApplication('Apk/app-release.apk', true)
 	}
-	
+
 	@Then("close app")
 	public void close_app() {
 		Mobile.closeApplication()
 	}
-	
-	
+
+
 	//Reg002 - User want to register using invalid credential
 	@Then("start app")
 	public void start_app() {
 		Mobile.startApplication('Apk/app-release.apk', true)
 	}
-	
+
 	@Then("input nama1")
 	public void input_nama1() {
 		WebUI.callTestCase(findTestCase('Page/Register/Input Nama'), [('nama') : 'Jeko'], FailureHandling.STOP_ON_FAILURE)
@@ -150,7 +150,7 @@ class Register {
 	public void input_alamat1() {
 		WebUI.callTestCase(findTestCase('Page/Register/Input Alamat'), [('alamat') : 'Candisari'], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("verify email")
 	public void verify_email() {
 		Mobile.verifyElementVisible(findTestObject('Page Register/text - emailtdkvalid'), 0)
@@ -158,7 +158,7 @@ class Register {
 		Mobile.closeApplication()
 		Mobile.startApplication('Apk/app-release.apk', true)
 	}
-	
+
 	//Reg003 - User want to register using existing email
 	@Then("input nama2")
 	public void input_nama2() {
@@ -189,10 +189,10 @@ class Register {
 	public void input_alamat2() {
 		WebUI.callTestCase(findTestCase('Page/Register/Input Alamat'), [('alamat') : 'Kelapa Gading'], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("verify email sudah digunakan")
 	public void verify_email_sudah_digunakan() {
 		Mobile.verifyElementVisible(findTestObject('Page Register/text - emailsdhdigunakan'), 0)
 	}
-	
+
 }

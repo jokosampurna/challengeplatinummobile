@@ -1,6 +1,6 @@
 @Register @Smoke
 Feature: Register
-	As a User, I want to register in secondhand store website
+	As a User, I want to register in secondhand store mobile app
 	
 #JokoSampurno.QA.Wave1.Binar
 	

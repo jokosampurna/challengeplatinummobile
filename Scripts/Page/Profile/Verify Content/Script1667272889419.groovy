@@ -21,8 +21,6 @@ Mobile.verifyElementVisible(findTestObject('Page Profile/text - akunsaya'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Page Profile/button - editprofile'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Page Profile/text - namaprofile'), 0)
-
 Mobile.verifyElementVisible(findTestObject('Page Profile/button - daftarjual'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Page Profile/button - pesanansaya'), 0)

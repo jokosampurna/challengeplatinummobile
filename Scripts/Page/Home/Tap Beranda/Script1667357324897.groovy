@@ -17,19 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Page/Home/Tap Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Register/Tap Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Login/Verify content'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Login/Input Email'), [('email') : 'timamobile01@yopmail.com'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Login/Input Password'), [('password') : 'student1234'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Login/Tap login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Page/Profile/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Page Home/button - beranda'), 0)
 
