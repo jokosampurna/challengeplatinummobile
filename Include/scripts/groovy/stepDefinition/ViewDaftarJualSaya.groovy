@@ -46,34 +46,34 @@ import cucumber.api.java.en.When
 //JokoSampurno.QA.Wave1.Binar
 
 class ViewDaftarJualSaya {
-	
+
 	//PL001 - User want to view daftar jual saya menu semua produk
 	@Then("call login")
 	public void call_login() {
 		WebUI.callTestCase(findTestCase('Step Defintion/Feature Login/Log005 - User want to login using valid credential'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("tap daftar jual saya")
 	public void tap_daftar_jual_saya() {
 		WebUI.callTestCase(findTestCase('Page/Profile/Tap Daftar Jual'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("tap produk")
 	public void tap_produk() {
 		WebUI.callTestCase(findTestCase('Page/Daftar Jual Saya/Tap Produk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("verify content")
 	public void verify_content() {
 		WebUI.callTestCase(findTestCase('Page/Daftar Jual Saya/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	//PL002 - User want to view daftar jual saya menu diminati
 	@Then("tap diminati")
 	public void tap_diminati() {
 		WebUI.callTestCase(findTestCase('Page/Daftar Jual Saya/Tap Diminati'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	//PL003 - User want to view daftar jual saya menu terjual
 	@Then("tap terjual")
 	public void tap_terjual() {
