@@ -20,8 +20,7 @@ Feature: Register
 		Then verify content profile
 		Then close app
 		
-		
-	@Reg002
+		@Reg002
 	Scenario: Reg002 - User want to register using invalid credential
 		Then start app
 		Then tap akun
@@ -53,4 +52,3 @@ Feature: Register
 		Then swipe
 		Then tap daftar 
 		Then verify email sudah digunakan
-		
